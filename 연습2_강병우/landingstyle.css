@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    border: 1px solid green;
+    background-color: rgba(113, 253, 160, 0.562);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav img {
+    width: 200px;
+    height: 100px;
+}
+
+nav li {
+    display: inline;
+}
+
+nav li a {
+    display: inline-block;
+    padding: 1rem;
+}
+
+section {
+    display: flex;
+    width: 100vw;
+    max-width: 100%;
+    min-height: 80vh;
+    /* border: 3px solid red; */
+    place-items: center;
+    font-size: 1.2rem;
+}
+
+#hero {
+    min-height: calc(100vh - 86px);
+    place-items: center;
+    background: url("./assets/img/header-test4.jpg");
+    background-size: cover;
+    color: white;
+}
+
+.row {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section .col {
+    flex: 0 1 360px;
+    margin: 5px;
+}
+
+.col.col-full {
+    flex: 0 1 100%;
+    text-align: center;
+}
+
+#hero .col.col-full div {
+    font-size: 2rem;
+}
+
+#hero .col.col-full h1 {
+    margin: 5px;
+    font-size: 5rem;
+}
+
+#hero .col.col-full p {
+    margin: 30px;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .col.col-full {
+        flex: 0 1 80%;
+    }
+}
+
+.email-input-box {
+    width:300px;
+    height:35px;
+    font-size:15px;
+}
+
+.subscribe-button {
+    width:100px;
+    height:35px;
+    font-size:20px;
+}
+
+img {
+    object-fit: scale-down;
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    footer {
+        flex-direction: row;
+    }
+}
+
+footer .footer-list {
+    border: 2px solid black;
+    flex: 1 1 auto;
+}
+
+footer .footer-list .footer-item {
+    text-align: center;
+    margin: 10px;
+}
+
+.bg-ivory {
+    background-color: ivory;
+    color: rgb(0, 0, 0);
+}
+
+.bg-ivory h1 {
+    font-size: 2rem;
+}
+
+.row-callout {
+    display: flex;
+}
+
+.row-callout .col {
+    text-align: initial;
+    flex: 1 1 25%;
+    max-width: 30%;
+    font-size: 1rem;
+    padding: 5%;
+}
+
+.callout-icon {
+    width: 60px;
+    height: 60px;
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    background-image: url("./assets/img/user2.svg");
+    padding: 0;
+    margin: 0;
+}
+
+
